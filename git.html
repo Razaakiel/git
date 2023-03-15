@@ -4,7 +4,6 @@ accéder au répertoire où vous souhaitez créer le dépôt. Ensuite, exécutez
 <!--2 Ajouter un fichier au dépôt en utilisant la commande git add-->
 git add "nom du fichier"
 ou
-git add --all
 ou git add .
 
 <!--3 Vérifier l'état de dépôt en utilisant en utilisant la commande git status. -->
@@ -13,3 +12,31 @@ Affiche les fichiers modifiés, ajoutés e supprimés, ainsi que la branche acti
 
 <!--4 Effectuer un commit en utilisant la commande git commit-->
 git commit -m "first commit"
+
+
+<!--5 Créer un 2e fichier et effectuer un commit-->
+créer un fichier deuxiemeFichier.html 
+git add .
+git status
+git commit -m "ajout 2e fichier"
+
+
+git config --global user.name "nom-user"
+git config --global user.email "mail-user"
+
+<!--6 Vérifier l'historique des commits en utilisant la commande git log-->
+git log
+Affiche la liste des commits, avec leur message, leur auteur, leur date et leur
+identifiant de commit
+
+<!--7 Créer une nouvelle branche en utilisant la commande git branch-->
+Commencer par un préfixe pour indiquer le type de branche
+git branch cours-git/premiere-branche
+
+<!--8 Basculer sur la nouvelle branche en utilisant la commande git checkout-->
+git checkout cours-git/premiere-branche
+
+<!--9 Modifier un fichier et effectuer un commit sur la nouvelle branche-->
+git status
+git add mon_fichier_modifie.txt 
+git commit -m "modification sur la nouvelle branche"
