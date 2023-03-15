@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-mon fichier modifiés
-=======
-voici mon fichier modifier
->>>>>>> cours-git/premiere-branche
